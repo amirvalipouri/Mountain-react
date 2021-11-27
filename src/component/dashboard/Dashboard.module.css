@@ -1,0 +1,439 @@
+.container {
+    display: flex;
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+
+.content {
+    transition:  0.3s;
+
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #f1f1f1;  
+}
+
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 750px){
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .cardHoliday{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardBody{
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    .mountain{
+        width: 100%;
+    }
+
+    .searching{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 65rem;
+    }
+
+    .groupBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .box{
+        margin-bottom: 1rem;
+    }
+    .travelGrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .travel{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardBody{
+        border: 8px solid #618181 ;
+        width: 100px;
+        height: 30vh;
+        padding: 10px;
+        border-right: none;
+        position: relative;
+
+    }
+  }
+
+  .mountain {
+      width: 100%;
+      height: 50rem;
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-width: 100%;
+}
+
+
+  
+  .mountain span {
+    display: inline-block;
+    position: fixed;
+    top : 10px;
+    right :15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cardHoliday{
+    width: 100%;
+
+}
+
+.cardBody{
+    border: 8px solid #618181 ;
+    width: 500px;
+    height: 55vh;
+    padding: 10px;
+    border-right: none;
+    border-top-width: 30%;
+    border-bottom-width: 30%;
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    
+}
+
+
+
+.cardTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.cardTitle h4 {
+    background-color: #879EA4;
+    padding: 5px;
+}
+
+.cardText{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardText p {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Zen Antique', serif;
+    
+}
+
+
+.LearnMore{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.LearnMore p {
+    border-bottom: 3px solid #8685EF ;
+    cursor: pointer;
+}
+
+.searching{
+    background-color: black;
+    width: 100%;
+    height: 32rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 400px;
+    gap: 25px;
+    padding: 1rem;
+    min-width: 100%;
+    
+    
+}
+
+.left {
+   height: 30rem; 
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    border: 8px solid #618181 ;
+    width: 500px;
+    min-width: 300px;
+    height: 56vh;
+    padding: 10px;
+    border-left: none; 
+    height: 30rem; 
+    margin-right: 10px;
+}
+
+.right h1  {
+    color: white;
+}
+
+.right p  {
+    color: white;
+}
+
+.ReadMore{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.ReadMore p {
+    border-bottom: 3px solid #8685EF ;
+    cursor: pointer;
+}
+
+.tent { 
+    width: 100%;
+    height: 45rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tentDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.tentTitle{
+    border: 8px solid #618181 ;
+    border-top: none;
+    border-right: none;
+    margin: 4rem 0px 0px 6rem;
+    width: 400px;
+    padding: 10px;
+}
+
+.tentTitle h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.p{
+    width: 700px;
+    color: white;
+    margin:2rem 0px 0px 7rem ;
+}
+
+.LearnMoreTent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.LearnMoreTent p {
+    border-bottom: 3px solid #8685EF ;
+    cursor: pointer;
+    color: white;
+    margin:2rem 0px 0px 7rem ;
+}
+
+.photographer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.photographer p {
+    margin: 10px 20px 0px 0px;
+    font-size: 14px;
+    font-family: 'Satisfy', cursive;
+   
+}
+
+.travel{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: auto;
+}
+
+.travelTitle {
+    padding: 10px;
+}
+
+.travelTitle h1 {
+    text-align: center;
+    color: #BFA065;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.groupBox{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.box{
+    border: 1px solid #404040;
+    width: 350px;
+    max-width: 250px;
+    height: 250px;
+
+}
+
+.box h2 {
+    text-align: center;
+    color: #afa695;
+    font-size: 72px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.box p {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 20px 0px 25px;
+}
+
+.travelGrid {
+    display: grid;
+    grid-template-columns: 500px 500px ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.travelLeft{
+    border: 8px solid #BFA065;
+    border-bottom: none;
+    border-right: none;
+    margin-top:4rem;
+    height: 15rem;
+    width: 20rem;
+    padding: 10px;
+}
+
+
+.travelLeft div {
+    position: absolute;
+    margin-left: 2rem;
+    color: #dcdcdc;
+
+}
+
+
+.travelRight {
+    
+    margin-top:4rem;
+    height: 32rem;
+    width: 30rem;
+    padding: 10px;
+    margin-bottom: 4rem;
+}
+
+.readMoree p {
+    border-bottom: 3px solid #BFA065 ;
+    cursor: pointer;
+    color: white;
+    margin-top: 2rem;
+}
+.imgTravel{
+    display: flex;
+
+}
+
+.imgMountain {
+    width: 500px;
+    height: 500px;
+    transform: translate(55px , 45px);
+}
+
+.imgHiker{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+
+}
+
+/* 
+@media (max-width:750px){
+
+} */
